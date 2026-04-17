@@ -1,3 +1,9 @@
 node_modules
 .env
 .DS_Store
+
+server.js
+package.json
+package-lock.json
+
+deno.lock
