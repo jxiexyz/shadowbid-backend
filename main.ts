@@ -165,7 +165,7 @@ async function withdrawFromTEE(amountUsdc: number): Promise<string> {
 }
 
 // -- SERVER --
-Deno.serve(async (req: Request) => {
+Deno.Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
   const url = new URL(req.url);
   const path = url.pathname;
@@ -476,3 +476,4 @@ Deno.serve(async (req: Request) => {
   // -- 404 --
   return json({ error: "Not found" }, 404);
 }, { hostname: "0.0.0.0", port: 8000 });
+
