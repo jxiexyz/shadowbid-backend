@@ -1,1 +1,1 @@
-{"nodeModulesDir": "none"}
+{"nodeModulesDir": "none", "unstable": ["temporal"], "tasks": {"start": "deno run --allow-net --allow-env --allow-read main.ts"}}
