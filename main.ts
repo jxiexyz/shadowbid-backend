@@ -476,4 +476,4 @@ serve(async (req: Request) => {
 
   // ── 404 ──
   return json({ error: "Not found" }, 404);
-});
+}, { hostname: "0.0.0.0", port: 8000 });
